@@ -1,0 +1,194 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#e0e5ec;
+    color:#333;
+}
+
+/* ==========================
+   NAVBAR (SOFT UI)
+========================== */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#e0e5ec;
+    position:fixed;
+    width:100%;
+    top:0;
+    box-shadow:8px 8px 15px #a3b1c6,
+               -8px -8px 15px #ffffff;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#6c63ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    padding:8px 15px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    box-shadow:inset 4px 4px 8px #a3b1c6,
+               inset -4px -4px 8px #ffffff;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+}
+
+.hero-text h1{
+    font-size:50px;
+    color:#6c63ff;
+}
+
+.hero-text p{
+    margin:20px 0;
+    line-height:1.6;
+}
+
+/* ==========================
+   IMAGE (SOFT SHADOW)
+========================== */
+
+.hero-image img{
+    width:280px;
+    border-radius:20px;
+    box-shadow:8px 8px 15px #a3b1c6,
+               -8px -8px 15px #ffffff;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    border-radius:30px;
+    background:#e0e5ec;
+    color:#6c63ff;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:5px 5px 10px #a3b1c6,
+               -5px -5px 10px #ffffff;
+    transition:.3s;
+}
+
+.btn:hover{
+    box-shadow:inset 5px 5px 10px #a3b1c6,
+               inset -5px -5px 10px #ffffff;
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section{
+    padding:80px 8%;
+}
+
+.heading{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#6c63ff;
+}
+
+/* ==========================
+   CARD (NEUMORPHISM)
+========================== */
+
+.card{
+    padding:25px;
+    border-radius:20px;
+    background:#e0e5ec;
+    box-shadow:8px 8px 15px #a3b1c6,
+               -8px -8px 15px #ffffff;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.skills-grid,
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+.contact-box{
+    text-align:center;
+}
+
+.contact-box p{
+    margin:10px 0;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:#e0e5ec;
+    box-shadow:inset 5px 5px 10px #a3b1c6,
+               inset -5px -5px 10px #ffffff;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+}
